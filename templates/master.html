@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="utf-8">
+    <title>Gynecologist specialist in delhi</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+    <link href="/static/img/logo.png" rel="icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">  
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="/static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/style.css" rel="stylesheet">
+    <link href="/static/css/boot.css" rel="stylesheet">
+    <link href="/static/css/slider.css" rel="stylesheet">
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+</head>
+<body>
+    <div class="container-fluid py-2 border-bottom d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-decoration-none text-body pe-3" href=""><i class="bi bi-telephone me-2"></i>+ 91-9999045856 </a>
+                        <span class="text-body">|</span>
+                        <a class="text-decoration-none text-body px-3" href=""><i class="bi bi-envelope me-2"></i>info@rosenwell.com</a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center text-lg-end">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-body px-2" href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="text-body px-2" href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="text-body px-2" href="">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="text-body px-2" href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="text-body ps-2" href="">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top bg-white shadow-sm">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0">
+                <a href="{% url 'index' %}" class="navbar-brand">
+                    <h1 class="m-0  text-primary"><img src="/static/img/logo.png" style="height:70px;">Rosenwell Healthcare Pvt Ltd</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="{% url 'index' %}" class="nav-item nav-link active">Home</a>
+                        <a href="{% url 'company-profile' %}" class="nav-item nav-link">Company Profile</a>
+                      
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Therapy Focus </a>
+                            <div class="dropdown-menu m-0">
+                                <a href="{% url 'categories' 'Orthopedics' %}" class="dropdown-item">Orthopedics</a>
+                                <a href="{% url 'categories' 'Oncology' %}" class="dropdown-item">Oncology</a>
+                                <a href="{% url 'categories' 'Gynecology' %}" class="dropdown-item">Gynecology</a>
+                                <a href="{% url 'categories' 'Dermatology' %}" class="dropdown-item">Dermatology</a>
+                                <a href="{% url 'categories' 'General' %}" class="dropdown-item">General Wellness</a>
+                                <a href="{% url 'categories' 'Diabetology' %}" class="dropdown-item">	Diabetology</a>
+                            </div>
+                        </div>
+                         <a href="{% url 'career' %}" class="nav-item nav-link">Career</a>
+                        <a href="{% url 'contact' %}" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="whatahsp">
+        <a href="https://wa.me/9999045856" title="Whatsapp"><img src="/static/img/whatsap.png" alt="Whatsapp image" title="Whatsapp" width="60px"></a>
+         <a href="tel:9999045856" title="Call"><img src="/static/img/call.png" title="Call" alt="Call" width="60px"></a>
+          <a href="mailto:info@rosenwell.com" title="E-mail"><img src="/static/img/email.png" title="E-mail" alt="E-mail" width="45px" style="margin-left:5px;"></a>
+    </div>
+<!-------header close----->
+
+  {% block body %} {% endblock %}
+
+<!--------Footer Start--------->
+<div class="container-fluid bg-dark text-light mt-5 py-5">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-6 col-md-6">
+                <h4 class="d-inline-block text-primary border-bottom border-5 border-secondary mb-4"><img src="/static/img/logo.png" style="height:70px;"> Rosenwell Healthcare Pvt Ltd</h4>
+                <br>
+                <div class="d-inline-flex align-items-center" >
+                    <a class="text-body px-2" href="" style="color:#0DB4C6;">
+                        <i class="fab fa-facebook-f fa-2x"></i>
+                    </a>
+                    <a class="text-body px-2" href="">
+                        <i class="fab fa-twitter  fa-2x"></i>
+                    </a>
+                    <a class="text-body px-2" href="">
+                        <i class="fab fa-linkedin-in  fa-2x"></i>
+                    </a>
+                    <a class="text-body ps-2" href="">
+                        <i class="fab fa-youtube  fa-2x"></i>
+                    </a>
+                    <a class="text-body px-2" href="">
+                        <i class="fab fa-instagram  fa-2x"></i>
+                    </a>
+                    
+                </div>
+                
+            </div>
+            
+           
+            <div class="col-lg-3 col-md-6">
+                <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">Therapeutic Segments </h4>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-light mb-2" href="{% url 'categories' 'Orthopedics' %}"><i class="fa fa-angle-right me-2"></i>Orthopedics</a>
+                    <a class="text-light mb-2" href="{% url 'categories' 'Oncology' %}"><i class="fa fa-angle-right me-2"></i>Oncology</a>
+                    <a class="text-light mb-2" href="{% url 'categories' 'Gynecology' %}"><i class="fa fa-angle-right me-2"></i>Gynecology</a>
+                    <a class="text-light mb-2" href="{% url 'categories' 'Dermatology' %}"><i class="fa fa-angle-right me-2"></i>Dermatology</a>
+                    <a class="text-light mb-2" href="{% url 'categories' 'General' %}"><i class="fa fa-angle-right me-2"></i>General Wellness</a>
+                    <a class="text-light" href="{% url 'categories' 'Diabetology' %}"><i class="fa fa-angle-right me-2"></i>Diabetology</a>
+                </div>
+            </div>
+                <div class="col-lg-3 col-md-6">
+                <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">Our Address</h4>
+                 <div class="d-flex flex-column justify-content-start">
+                    <p class="mb-0"><i class="fa fa-phone-alt text-primary me-3"></i><b>Contact Number:</b><br>  +91-9999045856<br> 011-42486931</p><br>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i><b>Email :</b><br> info@rosenwell.com</p><br>
+                    <a class="text-light mb-2" href="#"><i class="fa fa-map-marker-alt text-primary me-3"></i> <b>Works :</b><br> F-104 Sector -1 DSIIDC Industrial Area Bawana Delhi, North West Delhi, Delhi 110039</a><br>
+                    <a class="text-light mb-2" href="#"><i class="fa fa-map-marker-alt text-primary me-3"></i> <b>Marketing Office :</b><br> 601, Ansal Majestic Tower, G Block, Vikas Puri, New Delhi - 110018</a>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid bg-dark text-light border-top border-secondary py-4">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-md-6 text-center text-md-start">
+                <p class="mb-md-0">&copy; <a class="text-primary" href="#">Rosenwell Healthcare Pvt. Ltd.</a>. All Rights Reserved.@2024</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <p class="mb-0">This Site Maintained by <a class="text-primary" href="https://highxbrand.com/">Highxbradn India</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/static/lib/easing/easing.min.js"></script>
+<script src="/static/lib/waypoints/waypoints.min.js"></script>
+<script src="/static/lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="/static/lib/tempusdominus/js/moment.min.js"></script>
+<script src="/static/lib/tempusdominus/js/moment-timezone.min.js"></script>
+<script src="/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+<script src="/static/js/main.js"></script>
+</body>
+</html>

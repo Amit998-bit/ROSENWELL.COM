@@ -1,0 +1,34 @@
+{% extends 'master.html' %}
+
+{% block body %}
+
+ <!-- About Start -->
+ <div class="container-fluid py-5">
+    <div class="container">
+        <div class="row">
+          
+            <div class="col-lg-5 mb-5 mb-lg-0">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100 rounded" src="/{{product.img}}" style="width: 100%;">
+                </div>
+            </div>
+           
+            <div class="col-lg-7">
+                <div class="mb-4">
+                    <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5"></h5>
+                    <h1 class="display-4">Welcome To {{product.name}}</h1>
+                </div>
+                <p>{{product.short_descr}}</p>
+                
+            </div>
+              <h4>Form:</h4> 
+                <p>Deinox Cream comes in a cream form, making it easy to apply and incorporate into your daily skincare routine. The creamy texture ensures a luxurious and comfortable application.</p>    
+                <br>   
+                <h4>Benefits:</h4>
+                    {{product.description|safe}}
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+{% endblock %}

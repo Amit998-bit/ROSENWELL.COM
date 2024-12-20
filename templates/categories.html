@@ -1,0 +1,93 @@
+{% extends 'master.html' %}
+
+
+{% block body %}
+		<!-- Services Start -->
+		<div class="container-fluid py-5">
+			<div class="container">
+				<div class="text-center mx-auto mb-5">
+					<h5 class="d-inline-block text-primary text-uppercase border-bottom border-5"></h5>
+					<h1 class="display-4">{{category}}</h1>
+				</div>
+				<div class="row g-5">
+					{% for pro in product %}
+					<div class="col-lg-4 col-md-6">
+						<a href="{% url 'product-details' pro.id %}">
+						<div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+							<div class="service mb-4">
+								 <i class="fa fa-2x text-white"><img src="/{{pro.img}}" width="100%" height="250px"></i>
+							</div>
+							<h4 class="mb-3">{{pro.name}}</h4>
+							<p class="m-0"></p>
+							
+								Read More
+						</div>
+						</a>
+					</div>
+					{% endfor %}
+					<!--<div class="col-lg-4 col-md-6">
+						<div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+							<div class="service mb-4">
+								<i class="fa fa-2x text-white"><img src="/static/img/oncology.png"  height="100px"></i>
+							</div>
+							<h4 class="mb-3">Oncology</h4>
+							<p class="m-0">Our therapies aim to combat various forms of cancer, providing patients with hope, comfort, and effective treatment options.</p>
+							<a class="btn btn-lg btn-primary rounded-pill" href="">
+								<i class="bi bi-arrow-right"></i>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+							<div class="service mb-4">
+							   <i class="fa fa-2x text-white"><img src="/static/img/gyno.png"  height="100px"></i>
+							</div>
+							<h4 class="mb-3">Gynecology</h4>
+							<p class="m-0">our gynecological portfolio includes innovative products and services for reproductive health, maternal care, and gynecological disorders.</p>
+							<a class="btn btn-lg btn-primary rounded-pill" href="">
+								<i class="bi bi-arrow-right"></i>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+							<div class="service mb-4">
+							   <i class="fa fa-2x text-white"><img src="/static/img/beauty.png"  height="100px"></i>
+							</div>
+							<h4 class="mb-3">Dermatology</h4>
+							<p class="m-0">Our treatments for skin conditions, and cosmetic dermatology, promoting healthy and radiant skin for all.</p>
+							<a class="btn btn-lg btn-primary rounded-pill" href="">
+								<i class="bi bi-arrow-right"></i>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+							<div class="service mb-4">
+							   <i class="fa fa-2x text-white"><img src="/static/img/healthcare.png"  height="100px"></i>
+							</div>
+							<h4 class="mb-3">General Wellness</h4>
+							<p class="m-0">our general wellness products support holistic health through nutritional supplements, vitamins, and lifestyle solutions.</p>
+							<a class="btn btn-lg btn-primary rounded-pill" href="">
+								<i class="bi bi-arrow-right"></i>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+							<div class="service mb-4">
+							  <i class="fa fa-2x text-white"><img src="/static/img/analysis.png"  height="100px"></i>
+							</div>
+							<h4 class="mb-3">Diabetology</h4>
+							<p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit</p>
+							<a class="btn btn-lg btn-primary rounded-pill" href="">
+								<i class="bi bi-arrow-right"></i>
+							</a>
+						</div>
+					</div>!-->
+				</div>
+			</div>
+		</div>
+		<!-- Services End -->
+
+{% endblock %}

@@ -1,0 +1,82 @@
+{% extends 'master.html' %}
+
+
+{% block body %}
+
+ 
+    <!-- Contact Start -->
+    <div class="container-fluid pt-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 500px;">
+                <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5"></h5>
+              
+            </div>
+            <div class="row g-5 mb-5">
+                <div class="col-lg-4">
+                    <div class="bg-light rounded d-flex flex-column align-items-center justify-content-center text-center" style="height: 250px;">
+                        <div class="d-flex align-items-center justify-content-center  mb-4">
+                            <i class="fa fa-map-marker-alt fa-2x text-primary me-3"></i>
+                        </div>
+                        <h6 class="mb-0">Works :<br> F-104 Sector -1 DSIIDC Industrial Area Bawana Delhi, North West Delhi, Delhi 110039<br><br>Marketing Office :<br> 601, Ansal Majestic Tower, G Block, Vikas Puri, New Delhi - 110018</h6>
+                         
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-light rounded d-flex flex-column align-items-center justify-content-center text-center" style="height: 250px;">
+                        <div class="d-flex align-items-center justify-content-center  mb-4" >
+                            <i class="fa fa-phone-alt fa-2x text-primary me-3"></i>
+                        </div>
+                        <h6 class="mb-0">+91-9999045856, 011-42486931</h6>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-light rounded d-flex flex-column align-items-center justify-content-center text-center" style="height: 250px;">
+                        <div class="d-flex align-items-center justify-content-center mb-4">
+                            <i class="fa fa-envelope fa-2x text-primary me-3"></i>
+                        </div>
+                        <h6 class="mb-0">info@rosenwell.com</h6>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center ">
+                <h1 class="display-4" style="text-align: center;">Drop Us A Message</h1>
+                <div class="col-lg-12">
+                    <div class="bg-white rounded p-5 m-5 mb-0">
+                        <form method="POST" action="">
+                            {% csrf_token %}
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" name="name" class="form-control bg-light border-0" placeholder="Your Name" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="email" name="email" class="form-control bg-light border-0" placeholder="Your Email" style="height: 55px;">
+                                </div>
+                                 <div class="col-12 col-sm-6">
+                                    <input type="text" name="mobile" class="form-control bg-light border-0" placeholder="Your Mobile" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" name="ps" class="form-control bg-light border-0" placeholder="Your Product/Services Name" style="height: 55px;">
+                                </div>
+                               
+                                <div class="col-12">
+                                    <textarea name="msg" class="form-control bg-light border-0" rows="5" placeholder="Message"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+    <div class="container">
+        <div class="row map" style="margin-top:100px;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7003.327646565122!2d77.075828!3d28.639836!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d04ec42c9fdb3%3A0xdab6fe177e60ecea!2sAnsal%20Majestic%20Tower%2C%20AK%20Market%2C%20Block%20G%2C%20Vikaspuri%2C%20Delhi%2C%20110018!5e0!3m2!1sen!2sin!4v1715842303246!5m2!1sen!2sin" width="100%" height="500px"></iframe> 
+        </div>
+    </div>
+
+{% endblock %}
